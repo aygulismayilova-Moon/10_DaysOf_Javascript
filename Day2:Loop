@@ -1,0 +1,17 @@
+function vowelsAndConsonants(s) {
+    //const sort_s=[...s].sort().join("");
+    const as=["a","i","o","u","e"]
+    let vowels="";
+    let g="";
+    for (let i=0;i<s.length;i++){
+        if (as.includes(s[i])){
+            vowels+=s[i];
+        } else {
+            g+=s[i];
+        }
+    }
+    let k=vowels+g
+    for (let j=0;j<k.length;j++){
+        console.log(k[j])
+    }
+}
